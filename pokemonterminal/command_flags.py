@@ -88,6 +88,11 @@ _misc_group.add_argument(
     'background',
     action='store_true')
 _misc_group.add_argument(
+    '-p',
+    '--printpath',
+    help='Prints path to wallpaper file instead of setting it',
+    action='store_true')
+_misc_group.add_argument(
     '-v', '--verbose', help='Enables verbose output', action='store_true')
 _misc_group.add_argument(
     '-dr',

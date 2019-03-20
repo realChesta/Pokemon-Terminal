@@ -107,7 +107,9 @@ def main(argv=None):
         print("You can stop it with 'pokemon {}'.".format('-c -w' if options.wallpaper else '-c'))
         return
 
-    if options.wallpaper:
+    if options.printpath:
+        print(target.get_path())
+    elif options.wallpaper:
         scripter.change_wallpaper(target.get_path())
     else:
         scripter.change_terminal(target.get_path())
